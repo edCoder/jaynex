@@ -1,0 +1,124 @@
+// https://codepen.io/nikhil/pen/qcyGF
+.ss-search {
+    .ss-searchbox {
+        position: relative;
+        // min-width: 42px;
+        width: 0%;
+        height: 40px;
+        float: right;
+        // overflow: hidden;
+        .transition-width (width; 0.3s);
+
+        @media (max-width: 767px) {
+            position: absolute;
+            top: 3px;
+            right: 50px;
+            // min-width: 40px;
+        }
+    }
+    .ss-searchbox-input{
+        top: 0;
+        right: 0;
+        border: 0;
+        outline: 0;
+        background: @searchBG; //color.less
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        height: 40px;
+        margin: 0;
+        padding: 0px 18px 0px 18px;
+        z-index: 1;
+        font-size: @search-inputFontsize; //variables.less
+        color: @search-inputColor; //color.less
+        &::-webkit-input-placeholder {
+            color: @search-placeholderColor; //color.less
+        }
+        &:-moz-placeholder {
+            color: @search-placeholderColor; //color.less
+        }
+        &::-moz-placeholder {
+            color: @search-placeholderColor; //color.less
+        }
+        &:-ms-input-placeholder {
+            color: @search-placeholderColor; //color.less
+        }
+
+        @media @laptop {
+            right: -20px;
+        }
+    }
+    .ss-searchbox-icon, .ss-searchbox-submit {
+        width: 48px;
+        height: 48px;
+        display: block;
+        position: absolute;
+        top: 0;
+        font-family: verdana;
+        font-size: 22px;
+        right: 0;
+        padding: 8px;
+        margin: 0;
+        border: 0;
+        outline: 0;
+        line-height: 32px;
+        text-align: center;
+        cursor: pointer;
+        // background: @searchbox-iconBG;
+        background: transparent;
+
+        @media (max-width: 767px) {
+            // width: 40px;
+            padding: 8px 5px;
+        }
+        .ss-swc-ico {
+            // width: 22px;
+            // max-width: 100%;
+        }
+        @media @tablet and (max-width: 991px) {
+            .ss-swc-ico {
+                width: 24px;
+            }
+        }
+    }
+    .ss-searchbox-open{
+        width: 100%;
+        // position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 15px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 13px 10px;
+            border-color: transparent transparent #ffffff transparent;
+        }
+        
+        .ss-searchbox-input {
+            width: 100%;
+            position: fixed;
+            top: 105px;
+            opacity: 1;
+            visibility: visible;
+            border-radius: 30px;
+
+            @media (max-width: 767px) {
+                top: 50px;
+            }
+
+            @media @tablet {
+                width: 320px;
+                position: absolute;
+                bottom: -50px;
+                top: inherit;
+                z-index: 1;
+                -webkit-box-shadow: 0px 4px 14px -3px rgba(0,0,0,0.37);
+                -moz-box-shadow: 0px 4px 14px -3px rgba(0,0,0,0.37);
+                box-shadow: 0px 4px 14px -3px rgba(0,0,0,0.37);
+            }
+        }
+    }
+}

@@ -1,0 +1,285 @@
+.checkboxMargin {
+	margin: 15px 0;
+}
+.shippingMethod-wrap {
+	width: 100%;
+	float: left;
+
+	.panel {
+		border-radius: 0;
+	}
+	.panel-title {
+		padding: 0;
+	}
+	.panel-body {
+		background-color: #ffffff;
+	}
+
+	.shippingNotific-wrap {
+		width: 100%;
+		float: left;
+		padding: 0 20px;
+		margin-bottom: 10px;
+
+		.shippingNotific {
+			margin-top: 10px;
+			color: @danger;
+		}
+	}
+
+	.notAvailale-remove {
+		margin-top: 15px;
+		float: right;
+	}
+
+	.shipAccordian-list {
+		width: 100%;
+		float: left;
+		// margin-bottom: 18px;
+		padding: 10px 20px;
+
+		.producImg {
+			width: 120px;
+			height: auto;
+			float: left;
+			margin-right: 5px;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.productName {
+			width: 100%;
+			max-width: 300px;
+			float: left;
+			margin-right: 5px;
+
+			p {
+				margin: 0;
+			}
+		}
+
+		.shippingType-name, .shippingDays, .shippingCost {
+			width: auto;
+			float: left;
+			min-width: 145px;
+			margin-right: 5px;
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+		float: left;
+		width: 100%;
+
+		li {
+			width: 100%;
+			float: left;
+			padding: 15px;
+			margin: 2px 0;
+			background-color: lighten(@shippingMethod-li-BG, 45%);
+			display: table;
+
+			@media @tablet {
+				background-color: @shippingMethod-li-BG;
+			}
+
+			.shippingMethod-blocks {
+				display: table-cell;
+				vertical-align: middle;
+				width: 100%;
+				float: left;
+				font-size: 16px;
+				padding: 6px 0;
+
+				@media @note {
+					width: auto;
+					float: none;
+					min-width: 10%;
+				}
+				@media @tablet {
+					min-width: 60px;
+					max-width: 500px;
+					padding: 6px 5px;
+				}
+
+				@media @laptop {
+					min-width: 180px;
+				}
+
+				.radioButton-wrap {
+					margin: 0;
+
+					label {
+						margin-bottom: 0;
+					}
+
+					img {
+						vertical-align: middle;
+						width: 25px;
+					}
+					.checkmark {
+						top: 3px;
+					}
+				}
+			}
+		}
+	}
+
+	.shippingError {
+		ul {
+			li {
+				background-color: @danger-bg;
+
+				.radioButton-wrap {
+					input[type=radio]+label {
+						color: #ca1717;
+					}
+					input[type=radio]:checked {
+						color: #ca1717;
+						background: #ca1717;
+					}
+				}
+			}
+		}
+	}
+}
+
+.paymentMethods {
+	width: 100%;
+	float: left;
+	margin: 20px 0 0;
+
+	ul{
+		padding: 0;
+		margin: 0;
+		float: left;
+		width: 100%;
+		li{
+			width: 100%;
+			float: left;
+			list-style: none;
+			padding: 5px 0;
+
+			.radioButton-wrap {
+				font-size: 16px;
+
+				p{
+					font-size: 14px;
+					font-style: italic;
+					color: #b3b3b3;
+				}
+			}
+		}
+	}
+}
+
+.placeOrder-section {
+	width: 100%;
+	min-height: 100px;
+	float: left;
+	padding: 20px 0;
+
+	@media @tablet {
+		padding: 20px;
+		border: 3px solid @placeOrder-section-borderColor;
+	}
+
+	.orderPrice-details {
+		// float: left;
+		width: 100%;
+		margin: 0 0 20px;
+		padding-bottom: 20px;
+		display: table;
+		border-collapse: collapse;
+		border-bottom: 1px solid @checkout-borderColor;
+
+		.orderPrice-detailsHead, .orderPrice-detailsBody, .orderPrice-detailsFooter {
+			vertical-align: middle;
+			border-bottom: 1px solid @common-borderColor;
+			width: 100%;
+			float: left;
+		}
+
+		.orderPrice-detailsBody {
+			overflow-y: auto;
+			padding: 0;
+
+			@media @tablet {
+				max-height: 120px;
+			}
+		}
+
+		.detailsHead-block, .detailsBody-block, .detailsFooter-block {
+			width: 100%;
+			float: left;
+			div {
+				font-size: 16px;
+				padding: 15px 0px;
+				display: block;
+
+				&:nth-child(odd) {
+					float: left;
+					width: 65%;
+				}
+				&:nth-child(even) {
+					float: right;
+					width: 35%;
+					text-align: right;
+				}		
+			}
+		}
+		.detailsHead-block {
+			div {
+				font-weight: bold;
+			}
+		}
+		.detailsBody-block, .detailsFooter-block {
+			div {
+				padding: 8px 0px;
+			}
+		}
+		.detailsBody-block {
+			padding-right: 10px;
+
+			.qtyDiv {
+				float: left;
+				width: 100% !important;
+
+				.form-control {
+					max-width: 40px;
+					padding: 6px;
+					height: 32px;
+					text-align: center;
+					
+					&:disabled {
+				    	color: #6f6f6f;
+					}
+				}
+			}
+
+				
+		}
+		.detailsFooter-block {
+			padding: 5px 0;
+		}
+	}
+
+	.placeOrder-button {
+		width: 100%;
+		float: left;
+		.btn {
+			width: 100%;
+			background-color: @themeColor;
+
+			&:hover, &:focus {
+				background-color: @themeColor-secondary;
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+
+@media (max-width: 767px){
+	#layout-checkout .ss-search .ss-searchbox {
+		right: 15px;
+	}
+}
+
+.ui-icon-triangle-1-s {
+	background-position: -163px 0px;
+}
+.ui-icon-triangle-1-n {
+	background-position: -181px 0px;
+}

@@ -1,0 +1,268 @@
+.cartlst {
+	width: 100%;
+	float: left;
+
+	ul.listcart {
+		float: left;
+		width: 100%;
+		padding: 0;
+		margin-bottom: @gutterSpace;
+
+		@media @tablet {
+			margin: 0;
+		}
+
+		.listcart-item {
+			float: left;
+			width: 100%;
+			list-style: none;
+			padding: @gutterSpace 0px;
+			border-bottom: 1px solid @common-borderColor;
+
+			@media (max-width: 767px) {
+				// padding: @gutterSpace;
+				background: @layoutSec-bg;
+				margin-bottom: @gutterSpace;
+			}
+
+	    	.cartpro {
+	    		float: left;
+	    		width: 100%;
+	    		// display: block;
+	    		display: table;
+
+	    		.cartpro-img {
+	    		    // display: block;
+	    		    
+	    			// float: left;
+	    			width: 120px;
+	    			margin: 0 auto;
+	    			height: auto;
+	    			padding-right: 15px;
+
+	    			@media @note {
+	    				display: table-cell;
+	    				float: left;
+	    			}
+	    		}
+	    		.cartpro-txt{
+	    		    // display: block;
+	    		    width: 100%;
+	    		    vertical-align: top;
+	    			float: left;	    			
+	    			padding: 0px;
+
+	    			@media @note {
+	    				display: table-cell;
+	    				float: none;
+	    			}
+
+	    			.cartProduct-name{
+	    				font-size: @cartProduct-cartProduct-name-fontSize;
+	    				line-height: @cartProduct-cartProduct-name-fontSize + 10;
+	    				color: @cartProduct-titleColor;
+	    				margin-top: 5px;
+	    			}
+	    			p{	
+	    				span{
+	    					float: left;
+	    					width: 55px;
+	    					color: @cartpro-txt-p-color;
+	    				}
+	    			}
+	    		}
+	    	}
+
+    		.carttxt{
+    			float: left;
+    			width: 100%;
+    			display: block;
+    			margin: 7px auto 0px;
+    			text-align: left;
+
+    			.cartProduct-title{
+    				font-size: @cartProduct-title-fontSize;
+    				color: @cartProduct-titleColor;
+    				text-align: left;
+    				padding-bottom: 15px;
+					border-bottom: 1px dashed @common-borderColor;
+					margin-top: 0;    				
+    			}
+    			.form-group {
+    				.form-control {
+    					width: 50px;
+    					text-align: center;
+    				}
+    			}
+    			p{
+    				text-align:left;
+    			}
+
+    			@media @laptop {
+					text-align: center;
+
+					.cartProduct-name, .cartProduct-title, p{
+						text-align: center;
+					}
+				}
+
+    			button, a{
+    				&.actionBtn {
+    					background: transparent;
+    					float: left;
+	    				display: inline-block;	    				
+	    				text-align: left;
+	    				margin: auto 5px;
+	    				width: 32px;
+	    				border: none;
+	    				outline: none;
+	    				opacity: 0.55;
+	    				transition-duration: 0.5s;
+	    				padding: 0 3px;
+
+	    				@media @tablet {
+	    					float: none;
+	    				}
+
+    					img {
+    						width: 100%;
+    					}
+    					&:hover, &:focus{
+	    					opacity: 1;
+	    				}
+    				}
+    			}
+    		}
+
+    		&.invalid-product {
+				border: 1px solid @danger;
+				padding: 10px;
+				
+				.cartpro, .carttxt{
+					opacity: .3;
+				}
+				.carttxtAction {
+					opacity: 1;
+					
+					.actionBtn {
+						opacity: .3;
+					}
+					.actionDelet {
+						opacity: 1;
+					}
+				}
+			}
+	    }
+    }
+
+    .cartlst-btnsec{
+    	float: left;
+    	width:100%;
+    	text-align: center;
+
+    	.form-group {
+    		margin-bottom: 0;
+    	}
+
+    	.btn {
+    		margin: 3px;	
+    	}
+
+    	@media @tablet {
+    		text-align: end;
+    	}
+    }
+}
+
+.cart-summ{
+    // padding: 20px;
+    // padding: 20px 15px;
+
+    @media @tablet {
+    	background: @white;
+    	padding: 20px;
+    }
+}
+.cartshipchck, .cart-code {
+	
+
+	// @media @tablet {
+	// 	margin: 0px 0px 30px;
+	// }
+}
+// .cartshipchck {
+// 	.form-group{
+// 		margin-bottom: 0;
+// 	}
+// }
+.cart-summ {
+	.cart-summTable {
+		tbody {
+			tr {
+				border: none;
+				th, td {
+					padding: 10px 0;
+					font-size: 15px;
+				}
+				td {
+					text-align: right;
+				}
+			}
+		}
+	}
+	.checkoutBtn {
+		width: 100%;
+		background-color: @themeColor;
+
+		&:hover, &:focus {
+			background-color: @themeColor-secondary;
+		}
+	}
+}
+
+.cart-code {
+	margin: 0px;
+
+	@media @tablet {
+		margin: 0px 0px 15px;
+	}
+
+	.form-group {
+		margin: 0;
+	}
+	.input-group {
+		width: 100%;
+
+		.form-control {
+			margin-bottom: 5px;
+		}
+
+		.input-group-btn {
+			.btn {
+				width: 100%;
+				background-color: @themeColor;
+
+	    		&:hover, &:focus {
+	    			background-color: @themeColor-secondary;
+	    		}
+			}
+		}
+
+		@media @note {
+			width: auto;
+
+				.form-control {
+					margin: 0;
+				}
+		}
+	}
+	.input-group-btn {
+		width: 100%;
+		float: left;
+
+		@media @note {
+			float: none;
+			width: 1%;
+		}
+	}
+}

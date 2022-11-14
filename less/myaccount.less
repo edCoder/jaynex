@@ -1,0 +1,288 @@
+.my-acctab{
+	float: left;
+	width: 100%;
+	display: block;
+	// padding: 15px 0;
+	// background: @my-acctab-BG;
+
+	.tab {
+		float: left;
+		border-right: none;
+		background-color: @my-acctab-tabBG;
+		width: 100%;
+		min-height: 1;
+
+		.tablinks{
+			display: block;
+			background-color: @my-acctab-tablinks-BG;
+			font-size: 16px;
+			padding: 20px;
+			width: 100%;
+			border: none;
+			border-bottom: 2px solid @my-acctab-tablinks-borderColor;
+			outline: none;
+			text-align: left;
+			cursor: pointer;
+			transition-duration: .3s;
+			&:hover, &.active{
+				background-color: @my-acctab-tablinks-hover-BG;
+				color: @my-acctab-tablinks-active_hover-color;
+			}
+			&.active{
+				background-color: @my-acctab-tablinks-active-BG;
+			}
+		}	  
+	}
+	.tabcontent {
+		float: left;	    	 
+		padding: 20px 15px;  
+		width: 100%;
+		border-left: none;
+		min-height: 500px;
+		background-color: @my-acctab-tabcontent-BG;
+
+		@media @tablet {
+			padding: 20px; 
+		}
+
+		.tabcontent-title {
+			font-size: 22px;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+
+		.myacccount-saveBtn {
+			float: right;
+			background-color: @myacccount-saveBtn;
+		}
+	}
+
+	@media @tablet {
+		padding: 0 15px;
+
+		.tab{
+			width: 30%;
+			min-height: 500px;
+			border-right: 2px solid @my-acctab-tablinks-borderColor;
+		}
+		.tabcontent{
+			width: 70%;
+			min-height: 500px;
+			padding: 15px 30px;
+			padding-right: 0;
+		}
+	}
+
+	@media @laptop {
+		.tab{
+			width: 25%;
+		}
+		.tabcontent{
+			width: 75%;
+		}
+	}
+
+	@media @desktop {
+		.tab{
+			width: 20%;
+		}
+		.tabcontent{
+			width: 80%;
+		}
+	}
+
+	// Order History Details
+	.orderHistory-table, .refundDetails-table {
+		margin-top: 15px;
+		thead {
+			background-color: #f7f7f7;
+
+			tr {
+				border: none;
+
+				@media @laptop {
+					th {
+						padding: 18px 15px;
+					}
+				}
+			}
+		}
+	}
+}
+.statusSec {
+	color: @white;
+	padding: 4px 12px;
+	border-radius: 4px;
+}
+@media @laptop {
+	padding: 15px;
+}
+
+.dfltAddre-block, .otherAddre-block {
+	float: left;
+	width: 100%;
+	margin-bottom: 15px;
+
+	.dfltAddre-head {
+		width: 100%;
+		float: left;
+		background-color: @themeColor;
+		// padding: 10px 15px;
+
+		.dfltAddre-headTitle {
+			float: left;
+			color: #ffffff;
+			margin: 0;
+			padding: 11px 15px;
+		}
+		.dfltAddre-headRight {
+			text-align: right;
+			float: right;
+
+			> i {
+				color: #ffffff;
+				margin-right: 15px;
+			}
+			.btn {
+				border-radius: 0;
+				padding: 0 10px;
+				background-color: @dfltAddre-headBG;
+			}
+		}
+	}
+	.dfltAddre-body {
+		width: 100%;
+		float: left;
+		background-color: #ffffff;
+		padding: 15px;
+	}
+}
+
+.otherAddre-block {
+	
+	.dfltAddre-head {
+		background-color: #efefef;
+
+		.dfltAddre-headRight {
+			.btn {
+				background-color: #efefef;
+				i {
+					color: #000;
+				}
+			}
+		}
+	}
+}
+
+.tabReviw {
+	width: 100%;
+	float: left;
+	border: 1px solid @common-borderColor;
+	border-radius: 3px;
+	padding: 15px;
+	margin: 5px 0;
+
+	.rating-review {
+		float: left;
+	}
+
+	.revw-date {
+		float: left;
+		width: auto;
+		color: #9a9a9a;
+
+		@media @tablet {
+			margin-left: 15px;	
+		}
+	}
+	.revw-status {
+		float: right;
+		width: auto;
+	}
+	.reviw-product-title {
+		width: auto;
+		float: left;
+		font-size: 14px;
+		color: #000;
+		margin: 2px 0 5px;
+	}
+	.reviw-product-sku {
+		float: left;
+		width: auto;
+		margin: 2px 0 5px;
+		margin-left: 15px;
+		text-transform: uppercase;
+	}
+	.cstmr-revw-comnt {
+		margin-top: 10px;
+    	line-height: 24px;
+    	font-size: 14px;
+    	color: #666;
+	}
+	.fnctnBtns {
+		float: left;
+		width: 100%;
+
+		button {
+			background: 0 0;
+			border: 1px solid #ececec;
+			border-radius: 5px;
+			transition-duration: .3s;
+			float: right;
+			margin: 2px;
+
+			&.edit, &.delete {
+				color: #000;
+    			width: 55px;
+
+    			i {
+    				font-size: 18px;
+    			}
+			}
+		}
+	}
+}
+
+// OTP Modal
+.otp-requestModal {
+	.modal-dialog {
+		.modal-content {
+			.modal-header {
+				text-align: right;
+				.close {
+					float: none;
+				}
+			}
+			.modal-body {
+				.otp-form-group {
+					text-align: center;
+					.form-control {
+						width: 40px;
+						display: inline-block;
+						padding: 5px;
+						margin: 0 5px;
+						border: none;
+						border-bottom: 1px solid @themeColor;
+						text-align: center;
+
+						&:hover, &:focus {
+							box-shadow: none;
+						}
+					}
+				}
+				p {
+					text-align: center;
+					margin-top: 15px;
+
+					a {
+						color: #000000;
+						font-weight: 600;
+					}
+				}
+				.verifyBtn {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

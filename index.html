@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
+<title>JAYNEX</title>
+
+<link rel="stylesheet" href="css/ssgrids.min.css">
+
+<link rel="stylesheet" href="css/style.min.css">
+
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome 5 Free -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+</head>
+<body id="layout-home_page">
+
+<div class="oneColumn">
+	<header data-spy="affix" data-offset-top="84">
+		<div class="container-fluid">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle toggle-menu pull-left" data-target="#ss-navbar-collapse"> 
+						<span class="sr-only">Navigation Menu</span> 
+						<span class="icon-bar top-bar"></span> 
+						<span class="icon-bar middle-bar"></span> 
+						<span class="icon-bar bottom-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt=""></a>
+
+					<div class="headIcons">
+						<div class="ss-swc">
+							<button type="button" class="cartIcon" data-toggle="modal" data-target="#rightModal"><img class="ss-swc-ico" src="images/cart-head.svg" alt=""><span class="badge">10</span></button>
+						</div>
+						<div class="btn-group ss-menu-with-icon settings-sec" data-name="myaccount-settings">
+							<a href="" type="button" data-toggle="dropdown"><img class="head-ico hidden-xs" src="images/user-head.svg" alt=""> <span class="visible-xs-inline-block">My Account</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="my-account.html">My profile</a></li>
+								<li><a href="login.html">Login</a></li>
+							</ul>
+						</div>
+						<div class="ss-swc ss-search">
+							<form class="ss-searchbox">
+								<input type="submit" class="ss-searchbox-submit" value="">
+								<span class="ss-searchbox-icon"><img class="ss-swc-ico" src="images/search.svg" alt=""></span>
+								<input type="search" placeholder="Search..." name="search" class="ss-searchbox-input" onkeyup="buttonUp();" required>
+							</form>
+						</div>
+					</div>
+					<div  class="navbar-collapse ss-spmenu" id="ss-navbar-collapse">
+						<ul class="nav nav-pills ss-nav-pills-menu">
+							<li class="active" data-tab-position="1"><a href="#1a" data-toggle="tab">Menu</a></li>
+							<li data-tab-position="2"><a href="#2a" data-toggle="tab">Settings</a></li>
+						</ul>
+					
+						<div class="tab-content clearfix ss-nav-pills-tab">
+							<div class="tab-pane active" data-tab-position="1" id="1a">
+								<ul class="nav navbar-nav">
+			                        <li class="parent">
+			                            <a href="product-listing.html"><img src="images/menu-toggle.png"> All sports <span class="dropTogg"></span></a>
+			                            
+			                            <ul class="child">
+			                                <li><a href="product-listing.html">Saree</a></li>
+			                                <li class="parent">
+			                                    <a href="product-listing.html">Fork <span class="dropTogg"></span></a>
+			                                    
+			                                    <ul class="child">
+			                                        <li><a href="product-listing.html">Onida</a></li>
+			                                        <li class="parent">
+			                                            <a href="product-listing.html">Samsung <span class="dropTogg"></span></a>
+			                                            <ul class="child">
+			                                                <li><a href="product-listing.html">Plasma</a></li>
+			                                            </ul>
+			                                        </li>
+			                                    </ul>
+			                                </li>
+			                                <li><a href="product-listing.html">Leggings</a></li>
+			                                <li><a href="product-listing.html">Inners</a></li>
+			                            </ul>
+			                        </li>
+			                        <li><a href="product-listing.html">Sample category</a></li>
+			                        <li><a href="product-listing.html">Test category</a></li>
+			                    </ul>
+							</div> 
+
+							<div class="tab-pane ss-t2 setting-area" data-tab-position="2" id="2a">
+								
+							</div>
+						</div>
+
+						<button type="button" class="pull-leftClose" id="ss-navbar-collapseClose">&times;</button>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="affixMargin">
+	
+		<div class="column-center">
+			<div class="container-fluid">
+				<div class="row">
+					<div id="ss-carousel-slider" class="carousel slide carousel-fade" data-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<a href="product-listing.html">
+									<img src="images/banner1.jpg" alt="">
+								</a>
+							</div>
+							<div class="item">
+								<a href="product-listing.html">
+									<img src="images/banner1.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<a class="left carousel-control" href="#ss-carousel-slider" role="button" data-slide="prev">
+							<img class="svg-prev" src="images/arrow_left-404040.svg">
+						</a>
+						<a class="right carousel-control" href="#ss-carousel-slider" role="button" data-slide="next">
+							<img class="svg-next" src="images/arrow_right-404040.svg">
+						</a>
+					</div>
+
+					<div class="section1 categoryList skewDwn">
+						<div class="container">
+							<div class="service-section">
+							    <div class="widget">
+							        <div class="rtc-itw-holder">
+							            <div class="icon-holder">
+							            	<img src="images/hIGH-qUALITY-icon.png" alt="">
+							            </div>
+							            <div class="text-holder">
+							                <h3>High Quality Materials</h3>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="widget">
+							        <div class="rtc-itw-holder">
+							            <div class="icon-holder">
+							            	<img src="images/DELIVERY-icon.png" alt="">
+							            </div>
+							            <div class="text-holder">
+							                <h3>With in 3-4 Weeks Delivery</h3>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="widget">
+							        <div class="rtc-itw-holder">
+							            <div class="icon-holder">
+							            	<img src="images/CUSTOMISE-icon.png" alt="">
+							            </div>
+							            <div class="text-holder">
+							                <h3>Easy Customise</h3>
+							            </div>
+							        </div>
+							    </div>
+							</div>
+
+							<div class="titleWrap">
+								<h2 class="productCarousel-title">Categories</h2>
+							</div>
+
+							<div id="categoryList-crsl" class="owl-carousel">
+							 	<div class="pro-card-item">
+									<a href="product-detail-page.html">
+										<div class="proimg-wrap">
+											<img class="pro-img" src="products/categories.jpeg" alt="">
+										</div>
+										<div class="pro-title">Fitness sports</div>
+									</a>
+								</div>
+							 	<div class="pro-card-item">
+									<a href="product-detail-page.html">
+										<div class="proimg-wrap">
+											<img class="pro-img" src="products/categories1.jpeg" alt="">
+										</div>
+										<div class="pro-title">water sports</div>
+									</a>
+								</div>
+							 	<div class="pro-card-item">
+									<a href="product-detail-page.html">
+										<div class="proimg-wrap">
+											<img class="pro-img" src="products/categories2.jpeg" alt="">
+										</div>
+										<div class="pro-title">racket sports</div>
+									</a>
+								</div>
+							 	<div class="pro-card-item">
+									<a href="product-detail-page.html">
+										<div class="proimg-wrap">
+											<img class="pro-img" src="products/categories3.jpeg" alt="">
+										</div>
+										<div class="pro-title">outdoor sports</div>
+									</a>
+								</div>
+							 	<div class="pro-card-item">
+									<a href="product-detail-page.html">
+										<div class="proimg-wrap">
+											<img class="pro-img" src="products/categories4.jpeg" alt="">
+										</div>
+									</a>
+									<div class="pro-title">outdoor sports</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<div class="section2 productCarousel-wrap">
+						<div class="container">
+							<div class="titleWrap">
+								<h2 class="productCarousel-title">Featured Products</h2>
+							</div>
+							<div id="featured-pro-crsl" class="owl-carousel">
+								<div class="item">
+								 	<div class="pro-card-item">
+										<a href="product-detail-page.html">
+											<div class="proimg-wrap">
+												<img class="pro-img" src="products/product1.jpeg" alt="product image 01">
+											</div>
+										</a>
+										<div class="listBlocks-contentWrap">
+											<a href="product-detail-page.html"><h5 class="pro-title">G-Star RAW Grey Heather Textured Doax Sweater</h5></a>
+											<div class="pro-offr"><p>Save 30%</p></div>
+											<div class="pro-price">
+												<p>₹49.00 <span class="old-price">₹69.00</span></p>
+											</div>	
+											<form>
+												<button type="submit" class="btn pro-addcart"><img src="images/cart.svg"> Add to Cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+								 	<div class="pro-card-item">
+										<a href="product-detail-page.html">
+											<div class="proimg-wrap">
+												<img class="pro-img" src="products/product2.jpeg" alt="product image 01">
+											</div>
+										</a>
+										<div class="listBlocks-contentWrap">
+											<a href="product-detail-page.html"><h5 class="pro-title">G-Star RAW Grey Heather Textured Doax Sweater</h5></a>
+											<div class="pro-offr"><p>Save 30%</p></div>
+											<div class="pro-price">
+												<p>₹49.00 <span class="old-price">₹69.00</span></p>
+											</div>	
+											<form>
+												<button type="submit" class="btn pro-addcart"><img src="images/cart.svg"> Add to Cart</button>
+											</form>
+										</div>							
+									</div>
+								</div>
+								<div class="item">
+								 	<div class="pro-card-item">
+										<a href="product-detail-page.html">
+											<div class="proimg-wrap">
+												<img class="pro-img" src="products/product3.jpeg" alt="product image 01">
+											</div>
+										</a>
+										<div class="listBlocks-contentWrap">
+											<a href="product-detail-page.html"><h5 class="pro-title">G-Star RAW Grey Heather Textured Doax Sweater</h5></a>
+											<div class="pro-offr"><p>Save 30%</p></div>
+											<div class="pro-price">
+												<p>₹49.00 <span class="old-price">₹69.00</span></p>
+											</div>	
+											<form>
+												<button type="submit" class="btn pro-addcart"><img src="images/cart.svg"> Add to Cart</button>
+											</form>
+										</div>							
+									</div>
+								</div>
+								<div class="item">
+								 	<div class="pro-card-item">
+										<a href="product-detail-page.html">
+											<div class="proimg-wrap">
+												<img class="pro-img" src="products/product4.jpeg" alt="product image 01">
+											</div>
+										</a>
+										<div class="listBlocks-contentWrap">
+											<a href="product-detail-page.html"><h5 class="pro-title">G-Star RAW Grey Heather Textured Doax Sweater</h5></a>
+											<div class="pro-offr"><p>Save 30%</p></div>
+											<div class="pro-price">
+												<p>₹49.00 <span class="old-price">₹69.00</span></p>
+											</div>	
+											<form>
+												<button type="submit" class="btn pro-addcart"><img src="images/cart.svg"> Add to Cart</button>
+											</form>
+										</div>							
+									</div>
+								</div>
+								<div class="item">
+								 	<div class="pro-card-item">
+										<a href="product-detail-page.html">
+											<div class="proimg-wrap">
+												<img class="pro-img" src="products/product5.jpeg" alt="product image 01">
+											</div>
+										</a>
+										<div class="listBlocks-contentWrap">
+											<a href="product-detail-page.html"><h5 class="pro-title">G-Star RAW Grey Heather Textured Doax Sweater</h5></a>
+											<div class="pro-offr"><p>Save 30%</p></div>
+											<div class="pro-price">
+												<p>₹49.00 <span class="old-price">₹69.00</span></p>
+											</div>	
+											<form>
+												<button type="submit" class="btn pro-addcart"><img src="images/cart.svg"> Add to Cart</button>
+											</form>
+										</div>							
+									</div>
+								</div>
+							</div>
+							<div class="loadMore-wrap">
+								<a class="viewAll" href="">Load more <i class="fas fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<div class="section3 collectionBanner-block">
+						<div class="container">
+							<div class="row">
+								<div class="collectionBanners">
+									<a href=""><img src="images/offer1.jpg" alt=""></a>
+								</div>
+								<div class="collectionBanners">
+									<a href=""><img src="images/offer2.jpg" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<div class="section4 productCarousel-wrap">
+						<div class="container">
+							<div class="titleWrap">
+								<h2 class="productCarousel-title">New Arrivals</h2>
+							</div>
+							<div id="bestselling-pro-crsl" class="owl-carousel">
+								<div class="item">
+								 	<div class="pro-card-item">
+										<a href="product-detail-page.html">
+											<div class="proimg-wrap">
+												<img class="pro-img" src="products/product6.jpeg" alt="product image 01">
+											</div>
+										</a>
+										<div class="listBlocks-contentWrap">
+											<a href="product-detail-page.html"><h5 class="pro-title">G-Star RAW Grey Heather Textured Doax Sweater</h5></a>
+											<div class="pro-offr"><p>Save 30%</p></div>
+											<div class="pro-price">
+												<p>₹49.00 <span class="old-price">₹69.00</span></p>
+											</div>	
+											<form>
+												<button type="submit" class="btn pro-addcart"><img src="images/cart.svg"> Add to Cart</button>
+											</form>
+										</div>							
+									</div>
+								</div>
+								<div class="item">
+								 	<div class="pro-card-item">
+										<a href="product-detail-page.html">
+											<div class="proimg-wrap">
+												<img class="pro-img" src="products/product7.jpeg" alt="product image 01">
+											</div>
+										</a>
+										<div class="listBlocks-contentWrap">
+											<a href="product-detail-page.html"><h5 class="pro-title">G-Star RAW Grey Heather Textured Doax Sweater</h5></a>
+											<div class="pro-offr"><p>Save 30%</p></div>
+											<div class="pro-price">
+												<p>₹49.00 <span class="old-price">₹69.00</span></p>
+											</div>	
+											<form>
+												<button type="submit" class="btn pro-addcart"><img src="images/cart.svg"> Add to Cart</button>
+											</form>
+										</div>							
+									</div>
+								</div>
+								<div class="item">
+								 	<div class="pro-card-item">
+										<a href="product-detail-page.html">
+											<div class="proimg-wrap">
+												<img class="pro-img" src="products/product8.jpeg" alt="product image 01">
+											</div>
+										</a>
+										<div class="listBlocks-contentWrap">
+											<a href="product-detail-page.html"><h5 class="pro-title">G-Star RAW Grey Heather Textured Doax Sweater</h5></a>
+											<div class="pro-offr"><p>Save 30%</p></div>
+											<div class="pro-price">
+												<p>₹49.00 <span class="old-price">₹69.00</span></p>
+											</div>	
+											<form>
+												<button type="submit" class="btn pro-addcart"><img src="images/cart.svg"> Add to Cart</button>
+											</form>
+										</div>							
+									</div>
+								</div>
+								<div class="item">
+								 	<div class="pro-card-item">
+										<a href="product-detail-page.html">
+											<div class="proimg-wrap">
+												<img class="pro-img" src="products/product9.jpeg" alt="product image 01">
+											</div>
+										</a>
+										<div class="listBlocks-contentWrap">
+											<a href="product-detail-page.html"><h5 class="pro-title">G-Star RAW Grey Heather Textured Doax Sweater</h5></a>
+											<div class="pro-offr"><p>Save 30%</p></div>
+											<div class="pro-price">
+												<p>₹49.00 <span class="old-price">₹69.00</span></p>
+											</div>	
+											<form>
+												<button type="submit" class="btn pro-addcart"><img src="images/cart.svg"> Add to Cart</button>
+											</form>
+										</div>							
+									</div>
+								</div>
+								<div class="item">
+								 	<div class="pro-card-item">
+										<a href="product-detail-page.html">
+											<div class="proimg-wrap">
+												<img class="pro-img" src="products/product10.jpeg" alt="product image 01">
+											</div>
+										</a>
+										<div class="listBlocks-contentWrap">
+											<a href="product-detail-page.html"><h5 class="pro-title">G-Star RAW Grey Heather Textured Doax Sweater</h5></a>
+											<div class="pro-offr"><p>Save 30%</p></div>
+											<div class="pro-price">
+												<p>₹49.00 <span class="old-price">₹69.00</span></p>
+											</div>	
+											<form>
+												<button type="submit" class="btn pro-addcart"><img src="images/cart.svg"> Add to Cart</button>
+											</form>
+										</div>							
+									</div>
+								</div>
+							</div>
+							<div class="loadMore-wrap">
+								<a class="viewAll" href="">Load more <i class="fas fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<div class="howToorder-section">
+						<div class="container">
+							<div class="howToorder">
+								<div class="orderTitle">
+									<h3>How to Order</h3>
+								</div>
+								<div class="orderSteps">
+									<div class="step">
+										<img src="images/step1.png" alt="">
+										<p>Choose your Sport</p>
+									</div>
+									<div class="step">
+										<img src="images/step2.png" alt="">
+										<p>Select Product</p>
+									</div>
+									<div class="step">
+										<img src="images/step3.png" alt="">
+										<p>Add to Cart</p>
+									</div>
+									<div class="step">
+										<img src="images/step4.png" alt="">
+										<p>Send as Enuery</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section5">
+						<div class="aboutSection">
+							<div class="aboutBanner">
+								<img src="https://static.hudl.com/users/prod/16358002_afdae75209204eaaadd364737744bcc9.jpg" alt="">
+							</div>
+							<div class="aboutContent">
+								<h2>About Us</h2>
+								<p>We are JAYNEX, One of the  SPORTSWEAR,WORKWEAR AND TEAMWEAR suppliers in Australia. We are supplier of excellent, high quality, customized and reviving outfits such as Club jersey, Teamwear, Shorts, Track suit, Jacket, Polo shirt, Workwear etc.</p>
+								<p> Our expert graphic designing team will help those who want to create attractive team wear designs from any of their ideas or from our own ideas which is upto your satisfaction. We are the specialist who provides customized team kit & work wears with personalized names & numbers as per our client's requirement. We offer clients the option to choose fabric as per their budget & comfort from our very large collection.</p>
+								<a href="" class="viewMore">Read More</a>
+							</div>
+						</div>
+					</div>
+
+					
+
+					<div class="clearfix"></div>
+
+					<div class="section7">
+						<div class="container">
+							<div class="titleWrap">
+								<h2 class="productCarousel-title">Testimonials</h2>
+							</div>
+							<div class="testimonialSection">
+								<div id="testimonial-crsl" class="owl-carousel owl-theme">
+									<div class="item">
+										<div class="testimonials">
+											<div class="quote">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum.</p>
+											</div>
+											<div class="team">
+												<div class="photo">
+													<img src="products/team1.jpg" alt="">
+												</div>
+												<div class="teamContent">
+													<h4>Team Name</h4>
+													<p>Country Name</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="testimonials">
+											<div class="quote">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum.</p>
+											</div>
+											<div class="team">
+												<div class="photo">
+													<img src="products/team2.jpg" alt="">
+												</div>
+												<div class="teamContent">
+													<h4>Team Name</h4>
+													<p>Country Name</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="testimonials">
+											<div class="quote">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum.</p>
+											</div>
+											<div class="team">
+												<div class="photo">
+													<img src="products/team3.jpg" alt="">
+												</div>
+												<div class="teamContent">
+													<h4>Team Name</h4>
+													<p>Country Name</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section6">
+						<div class="container">
+							<div class="brand-crsl-sec">
+								<div class="titleWrap">
+									<h2 class="productCarousel-title">Our Clients</h2>
+								</div>
+
+								<div id="brand-crsl" class="owl-carousel">
+									<div class="item">
+										<div class="brandImg-wrap">
+											<img src="images/brand1.jpg" alt="brand-1">
+										</div>
+									</div>
+									<div class="item">
+										<div class="brandImg-wrap">
+											<img src="images/brand2.jpg" alt="brand-2">
+										</div>
+									</div>
+									<div class="item">
+										<div class="brandImg-wrap">
+											<img src="images/brand3.jpg" alt="brand-3">
+										</div>
+									</div>
+									<div class="item">
+										<div class="brandImg-wrap">
+											<img src="images/brand4.jpg" alt="brand-4">
+										</div>
+									</div>
+									<div class="item">
+										<div class="brandImg-wrap">
+											<img src="images/brand5.jpg" alt="brand-5">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>		
+	</main>
+
+	<footer>
+		<div class="newsltr-wrap">
+			<div class="container">
+				<div class="newLetter-ctnt">
+					<div class="row">
+						<div class="col s12 m6 l5">
+							<h4>Sign-Up to Our Newsletter</h4>
+						</div>
+						<div class="col s12 m6 l7">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Your email address">
+									<span class="input-group-btn">
+										<button type="button" class="btn newsltr-btn waves-effect">Subscribe</button>
+									</span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footerTop">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<div class="footerLogo">
+							<img src="images/logo.svg" alt="">
+						</div>
+					</div>
+					<div class="col s12 m6">
+						<div class="addressWrap">PLOT NO 15, Near Sakthan Manor Apartments,<br>FR Vadakkan Road, Nagar, Thrissur, Kerala, India</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="call">
+							<h4>Call us</h4>
+							<p>+91 98765 43210</p>
+						</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="email">
+							<h4>Email us</h4>
+							<p>info@funsies.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footerMiddle">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 m3">
+						<div class="footerLinks">
+							<h5 class="footerHead">Get help</h5>
+							<ul class="usefulLinks">
+								<li><a href="">Delivery</a></li>
+								<li><a href="">Legal notice</a></li>
+								<li><a href="">Terms & Conditions</a></li>
+								<li><a href="">About us</a></li>
+								<li><a href="">Secure payment</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="footerLinks">
+							<h5 class="footerHead">Services</h5>
+							<ul class="usefulLinks">
+								<li><a href="">Suppliers</a></li>
+								<li><a href="">Stores</a></li>
+								<li><a href="">Identity</a></li>
+								<li><a href="">Sitemap</a></li>
+								<li><a href="">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="footerLinks">
+							<h5 class="footerHead">My account</h5>
+							<ul class="usefulLinks">
+								<li><a href="">My account</a></li>
+								<li><a href="">Order history</a></li>
+								<li><a href="">Addresses</a></li>
+								<li><a href="">Identity</a></li>
+								<li><a href="">Login</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="footerLinks">
+							<h5 class="footerHead">Follow us</h5>
+							<ul class="socialMedia">
+								<li class="facebook"><a href="">Facebook</a></li>
+								<li class="twitter"><a href="">Twitter</a></li>
+								<li class="instagram"><a href="">Instagram</a></li>
+								<li class="pinterest"><a href="">Pinterest</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footerBottom">
+			<div class="container">
+				<div class="coprgt">
+					<p>Copyright © 2021 Sprots demo.</p>
+				</div>
+				<div class="paymentGateway">
+					<img src="images/payment-gateways.png" alt="">
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+	
+
+<div class="modal right fade" id="rightModal" role="dialog">
+	<div class="modal-dialog">
+        <div class="addtoCart">
+        	<div class="cartPanel_header">
+        		<div class="headerInner">
+        			<span class="cartTitle">Your Cart</span>
+            		<button type="button" class="close" data-dismiss="modal">&times;</button>
+            	</div>
+        	</div>
+        	<div class="cartPanel-content">
+        		<div id="content_1" class="contentScroll cartPanel-body miniCart_scroll">
+    				<div class="minicartBlock">
+                        <div class="cart-panel-item-thumbnail">
+                            <a href="product-detail-page.html">
+                                <img src="products/product1.jpeg">
+                            </a>                                    
+                        </div>
+                        <div class="cart-panel-item-details">                                    
+                            <p class="cart-panel-product-title">Vivienne Floral Printed Midi Dress</p>
+                            <div class="cart-panel-quantity-pricing">                                       
+                                <div class="quantity-wrap">                                               
+                                    <div class="dummyqty">1</div>
+                                </div>
+
+                                <div class="cart-panel-item-price">
+                                    <span class="price-amount amount"><span class="price-currencySymbol">$</span>39.00</span>
+                                </div>
+                                <button type="button" class="btn mini-cart-close"><img class="mincrt-del" src="images/delete.svg"></button>                                        
+                            </div>
+                            <span class="error-message">The quantity field must be 1 or more</span>
+                        </div>
+                    </div>
+        		</div>
+
+        	</div>
+			<div class="cartPanel-footer">
+				<div class="footerInner">
+					<p class="mini-cart__total total">
+						<strong>Subtotal:</strong>
+						<span class="cart-panel-summary-subtotal">
+							<span class="price-amount amount"><span class="price-currencySymbol">$</span>109.00</span>
+						</span>
+					</p>
+					<p class="mini-cart_buttons buttons">
+						<a href="cart-page.html" class="button vewCart">View cart</a>
+						<a href="checkout.html" class="button checkout">Checkout</a>
+					</p>
+				</div>
+			</div>	
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/ssgrids.min.js"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

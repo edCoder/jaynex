@@ -1,0 +1,82 @@
+.conta-sec{
+	float: left;
+	width: 100%;
+	margin-bottom: 15px;
+
+	@media @tablet {
+		margin-bottom: 20px;
+		padding: 0 15px;
+	}
+
+	.conmap{
+		float:left;
+		width: 100%;
+		min-height: 300px;
+
+		@media @laptop {
+			min-height: 716px;
+		}
+	}
+
+    .contform{
+		float: left;
+		width: 100%;
+		padding: 20px 15px;
+
+		@media @laptop {
+			padding: 25px;
+		}
+		@media @desktop {
+			padding: 50px;
+		}
+
+		h3{	
+			font-size: @contactpage-title-size;
+			color: @contactpage-title-color;
+			text-align: left;
+			margin: 0px auto 15px;
+		}
+
+		form {
+			float: left;
+			width: 100%;
+
+			.conta-btn{
+				font-size: @contactpage-sentBtn-size;
+				height: 50px;
+				width: 100%;
+				outline: none;
+				margin-bottom: 15px;
+				background-color: @themeColor;
+				
+				&:hover, &:focus {
+					background-color: @themeColor-secondary;
+				}
+
+				@media @tablet {
+					height: 100px;
+				}
+			}
+		}		    
+
+		.info-addrs{
+			float: left;
+			width: 100%;
+			padding: 15px;
+			background: @contactpage-addressBG;
+
+			.info-adtxt{
+				margin: 10px 0;
+				padding: 5px 0;
+
+				img{
+					width: 24px;
+					vertical-align: middle;
+				}
+				&.marg-b-no{
+					margin-bottom: 0px;
+				}
+			}
+		}
+    }
+}

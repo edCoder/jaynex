@@ -1,0 +1,275 @@
+.writeReview-panel {
+	margin: 0;
+	margin-top: 15px;
+
+	.panel{
+		border: none;
+		background-color: @writeReview-panelBG;
+
+		.panel-body {
+			padding: 15px !important;
+		}
+	}
+	.review-post-cancelBtn {
+		text-align: right;
+		margin: 10px 0 0;
+	}
+}
+
+#description{
+	position:relative;
+
+	h3{
+		font-size: 24px;
+	    color: #000;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    margin: 0px 0 15px;
+	}
+}
+
+#reviews{
+	position:relative;
+	
+	h3.reviw-hd{
+		font-size: 24px;
+	    color: #000;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    margin: 0px 0 15px;
+	}
+	.reviwbx{
+		position:relative;
+		float:left;
+		width:100%;
+		padding:20px;
+		min-height: 190px;
+		text-align:center;
+		border:1px solid #ececec;
+
+		.reviw-wrap{
+		    display: block;
+		    position: absolute;
+		    width: 100%;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%,-50%);	    
+
+			h3.reviw-scr{
+				font-size:48px;
+				font-weight:400;
+				color:#000;
+				margin: 0px;
+				span.reviw-scr-sub{
+					font-size:21px;
+					color:#666;
+				}
+			}
+			h5.reviw-nrmlhd{
+			    margin-top: 10px;
+			}
+			.reviw-lnk{
+				color:#333;
+				font-weight:600;
+				text-decoration: none;
+				transition-duration:.3s;
+				&:hover{
+					color:#000;
+					text-decoration: underline;
+				}
+			}
+			.reviwbtn{
+				border-radius:3px;
+			}
+			.reviw-bdrbtn{
+				display: inline-block;
+				border: 2px solid #ececec;
+				border-radius: 3px;
+				padding: 6px 20px;
+				margin: 0px 2px 0px;
+				&:hover{
+					border: 2px solid #666;
+				}
+			}
+		}
+	}
+	.cstmr-reviw{
+		float:left;
+		width:100%;	
+		position:relative;
+		margin-top:15px;
+
+		.cstmr-reviw-hd{
+		    float: left;
+		    width: 100%;
+		    padding-bottom: 15px;
+		    margin: 10px 0 5px;
+		    border-bottom: 1px solid #ececec;
+
+			h3.cst-rewhd-txt{
+				float:left;
+			    font-size: 21px;
+			    text-transform: uppercase;
+			    font-weight: 400;
+			    margin: 0px;
+			}
+			p.cst-rew-txt{
+				float:left;
+				width:100%;
+				margin: 5px 0px 0px;
+
+				@media @tablet{
+					float:right;
+					width:auto;
+					margin: 0px;					
+				}				
+			}			
+		}
+		.cstmr-reviw-sec{
+			float: left;
+			width: 100%;
+			position: relative;
+			display: table;
+			padding: 15px 0px;
+			border-bottom: 1px solid #ececec;
+
+			.cstmr-reviw-thumb{
+				width: 70px;
+				display: table-cell;
+				vertical-align: top;
+				p{
+				    float: left;
+				    width: 60px;
+				    height: 60px;
+				    text-align: center;
+				    font-size: 18px;
+				    padding: 18px;
+				    text-transform: uppercase;
+				    color: #fff;
+				    background: #a9a9a9;
+				    border-radius: 50%;
+				}
+				@media @tablet{
+					width: 100px;
+				}			
+			}
+			.cstmr-reviw-cont{
+			    display: table-cell;
+			    vertical-align: top;
+
+				.rating-review{
+					.rating-stars{
+						margin-left: 0px;
+					}
+					label{
+						font-weight: 400;
+					}
+				} 
+
+				h5.cstmr-reviw-titl{
+					font-size: 16px;
+					font-weight: 400;
+					color: #000;
+					margin: 2px 0 5px;
+				}
+				p.cstmr-revw-name{
+					font-weight: 400;
+					color: #666;
+					margin: 0px 0px 5px;
+					span{
+						color: #999;
+					}
+				}
+				p.cstmr-revw-date{
+					float: left;
+					width:100%;
+					position: relative;
+					right: auto;					
+					span{
+						color: #999;
+					}
+
+					@media @tablet{
+						float: right;
+						width: auto;
+						position: absolute;
+						right: 0;
+						top: 15px;
+					}
+				}
+				p.cstmr-revw-comnt{
+					margin-top:10px;
+					line-height:24px;
+				}
+				.fnctnBtns {
+					float: left;
+					width: 100%;
+
+					button {
+						background: transparent;					
+						border: 1px solid #ececec;
+						border-radius: 5px;
+						transition-duration:.3s;
+						float: right;
+						margin: 2px;
+
+						&.cstmr-revw-help{
+							display: block;
+
+							p {
+								display:inline-block;
+								margin:0px;
+								color: #666;
+								span{
+									color: #333;
+								}
+							}
+							&:hover{
+								background:#ececec;
+							}
+
+							i{
+								display:inline-block;
+								font-size: 16px;
+								color: #000;
+							}
+						}
+
+						&.edit, &.delete {
+							color: #000000;
+							width: 40px;
+							padding: 0px;
+							text-align: center;
+
+							i {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.viewMore-review {
+			width: 100%;
+			float: left;
+			margin-top: 15px;
+			text-align: center;
+
+			@media @tablet {
+				margin-top: 30px;
+			}
+		}
+
+		.nomore-review {
+			width: 100%;
+			float: left;
+			padding: 10px;
+
+			p {
+				color: @danger !important;
+				text-align: center;
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,68 @@
+.newsletterPopup{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 95%;
+	height: auto;
+	min-height: 165px;
+	transform: translate(-50%, -50%);
+
+	@media @note {
+		width: 500px;
+		top: auto;
+		left: auto;
+		bottom: 50px;
+		right: 50px;
+		transform: translate(0, 0);
+	}
+
+	.modal-dialog{
+		width: 100%;
+		margin: 0;
+
+		.modal-content{
+			background-color: @newsletterPopup-BG;
+			color: @newsletterPopup-color;
+			border: none;
+
+			.modal-header{
+				border-bottom: none;
+
+				.close {
+					color: @newsletterPopup-color;
+				}
+			}
+
+			.modal-body {
+				.inputbtnWrap{
+					width: 100%;
+					display: table;
+
+					.inputWrap{
+						width: 100%;
+						display: table-cell;
+						padding-right: 5px;
+
+						input{
+							width: 100%;
+							height: @input-btn_height;
+							padding: 5px 10px;
+							border: none;
+						}
+					}
+					.subscribeBtn{
+						display: table-cell;
+						color: @newsletterPopup-Btncolor;
+						background-color: @themeColor;
+						border: none;
+						height: @input-btn_height;
+					}
+				}
+			}
+		}
+	}
+}						
+// .newsletterPopup:not(.in).right .modal-dialog {
+// 	-webkit-transform: translate3d(125%, 0, 0);
+// 	transform: translate3d(125%, 0, 0);
+// }

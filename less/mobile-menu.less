@@ -1,0 +1,85 @@
+// https://tympanus.net/Blueprints/SlidePushMenus/
+
+@media (max-width: 767px) {
+
+    /* General styles for all menus */
+    .ss-spmenu {
+        background: @ss-spmenu-BG;
+        position: fixed;
+        padding: 0;
+        margin: 0 !important;
+        overflow-y: visible;
+        display: block;
+        width: 250px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        left: -260px;
+
+        &.ss-spmenu-open {
+            left: 0px;
+            padding: 0;
+            .box-shadow (0; 0; 6px; 0; rgba(0,0,0,0.18));
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    }
+
+    /* Push classes applied to the body */
+    .ss-spmenu-push {
+        overflow-x: hidden;
+        position: relative;
+        left: 0;
+    }
+
+    // .ss-spmenu-push-toright {
+    .push-to-right-body {
+        // left: 250px;
+    }
+
+
+    /* Transitions */
+    .ss-spmenu, .ss-spmenu-push {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+}
+
+.ss-spmenu {
+    .pull-leftClose {
+        position: fixed;
+        top: 0;
+        left: -40px;
+        width: 35px;
+        border: none;
+        background-color: @themeColor;
+        color: @white;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 22px;
+        transition-duration: .3s;
+    }
+
+    &.ss-spmenu-open {
+        .pull-leftClose {
+            visibility: visible;
+            opacity: 1;
+            left: 250px;
+        } 
+    }
+    @media @tablet {
+        float: left;
+        margin-left: -10px !important;
+
+        .pull-leftClose {
+            display: none;
+        }
+        .tab-content {
+            >.tab-pane {
+                display: block;
+            }
+        }
+    }
+}

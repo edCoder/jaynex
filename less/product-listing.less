@@ -1,0 +1,181 @@
+.breadcrumb-wrap {
+	width: 100%;
+	float: left;
+}
+
+.leftWrap, 
+.centerWrap, 
+.rightWrap {
+	width: 100%;
+	min-height: 100px;
+	float: left;
+	// padding: 15px 0;
+	padding: 0 15px;
+}
+
+.leftWrap {
+	@media (max-width: 767px) {
+		padding-top: 15px;
+	}
+}
+
+.ss-productListing-leftWrap, 
+.ss-productListing-centerWrap, 
+.ss-productListing-rightWrap {
+	width: 100%;
+	float: left;
+}
+
+.ss-productListing-centerWrap {
+	.categoryTitle {
+		margin-top: 0;
+		color: @textColor;
+	}
+	.noproductTitle {
+		text-align: center;
+		width: 100%;
+		padding: 15px;
+		border: 1px solid @common-borderColor;
+		font-size: 14px;
+	}
+
+	// Panel content Common styles
+	.panel-group {
+		.panel {
+			border-left: none;
+			border-right: none;
+			border-color: @common-borderColor;
+			
+			.panel-heading {
+				border-bottom: none;
+				
+				.panel-title {
+					background: none;
+					font-weight: bold;
+    				padding: 10px 0px;
+    				border-bottom: 1px solid @common-borderColor;
+
+					i.fa {
+						float: right;
+						margin-top: -7px;
+						padding: 10px;
+						color: #b7b7b7;
+					}
+				}	
+			}
+
+			.panel-body {
+				padding: 15px 0px;
+
+				h1, h2, h3, h4, h5, h6 {
+					color: #333;		
+					font-weight:bold;		
+					text-transform: capitalize;
+				}
+				p {	
+					font-size: 14px;
+					color: #666;
+					line-height: 26px;
+				}
+				ul, ol {
+					padding-left: 15px;
+	    			margin-left: 10px;
+
+					li {
+						font-size: 14px;
+						color: #666;
+						line-height: 26px;
+						a {
+							color: inherit;						
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Listing Blocks
+.column-center {
+	.ss-productListing-blocks {
+		width: 50%;
+		padding: 5px;
+		display: inline-block;
+		vertical-align: top;
+
+		@media @tablet {
+			padding: 15px;
+		}
+		@media @laptop {
+			width: 33.3333%;
+		}
+	}
+}
+
+.oneColumn {
+	// Center Section
+	.column-center {
+		.ss-productListing-blocks {
+			@media @tablet {
+				width: 33.3333%;
+			}
+			@media @laptop {
+				width: 25%;
+			}
+		}
+	}
+}
+
+// Three or Four Blocks
+.ss-productListing-centerWrap {
+	&.blocksThree {
+		.ss-productListing-blocks {
+			@media @laptop {
+				width: 33.3333%;
+			}
+		}		
+	}
+	&.blocksFour {
+		.ss-productListing-blocks {
+			padding: 15px 10px;
+			@media @laptop {
+				width: 25%;
+			}
+		}
+		.row {
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+	}
+}
+
+// .ss-productListing-leftWrap, .leftWrap {
+.ss-productListing-leftWrap {
+	width: 300px;
+	height: 100%;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	left: -300px;
+	z-index: 9999;
+	padding: 0;
+	transition: .2s;
+	opacity: 0;
+	visibility: hidden;
+	background-color: #ffffff;
+
+	&.open {
+		left: 0;
+		opacity: 1;
+		visibility: visible;
+		.box-shadow (0; 0; 6px; 0; rgba(0, 0, 0, 0.18));
+	}
+
+	@media @tablet {
+		position: static;
+		width: 100%;
+		// margin: 0 0 30px;
+		opacity: 1;
+		visibility: visible;
+	}
+}
