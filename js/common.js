@@ -79,7 +79,7 @@ $("#testimonial-crsl.owl-carousel").owlCarousel({
 
 // categoryList Carousel
 $("#categoryList-crsl.owl-carousel").owlCarousel({
-    items: 4,
+    items: 5,
     margin: 25,
     nav: true,
     navText: ["<img src='images/arrow_left-404040.svg'>","<img src='images/arrow_right-404040.svg'>"],
@@ -88,13 +88,13 @@ $("#categoryList-crsl.owl-carousel").owlCarousel({
     responsiveClass: true,
     responsive: {
         0: {
-            items: 1
-        },
-        550: {
             items: 2
         },
+        550: {
+            items: 3
+        },
         769: {
-            items: 4
+            items: 5
         }
     }
 });

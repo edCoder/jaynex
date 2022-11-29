@@ -1555,14 +1555,14 @@ main .loadMore-wrap .viewAll {
   padding: 10px 25px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #f09620;
+  background-color: green;
   transition-duration: 0.3s;
   border-radius: 5px;
   min-width: 200px;
 }
 main .loadMore-wrap .viewAll:hover,
 main .loadMore-wrap .viewAll:focus {
-  background-color: #687f37;
+  background-color: #010b10;
 }
 main .loadMore-wrap .viewAll i {
   margin-left: 5px;
@@ -1602,13 +1602,13 @@ main .categoryList .pro-card-item .pro-title {
   left: 50%;
   transform: translate(-50%, 0);
   text-transform: capitalize;
-  font-size: 13px;
+  font-size: 14px;
   color: #0b2540;
 }
 @media (min-width: 768px) {
   main .categoryList .pro-card-item .pro-title {
     bottom: 40px;
-    padding: 4px 10px;
+    padding: 6px 15px;
     line-height: 1.5;
   }
 }
@@ -2131,7 +2131,6 @@ main .productGrid-wrap.gradientLayout.noProducts2 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
 }
 @media (min-width: 992px) {
   .aboutSection {
@@ -2141,12 +2140,6 @@ main .productGrid-wrap.gradientLayout.noProducts2 {
 .aboutSection .aboutBanner {
   width: 100%;
   display: flex;
-  max-height: 400px;
-}
-@media (min-width: 992px) {
-  .aboutSection .aboutBanner {
-    width: 30%;
-  }
 }
 .aboutSection .aboutBanner img {
   width: 100%;
@@ -2164,7 +2157,6 @@ main .productGrid-wrap.gradientLayout.noProducts2 {
 @media (min-width: 992px) {
   .aboutSection .aboutContent {
     padding: 50px;
-    width: 70%;
   }
 }
 .aboutSection .aboutContent h2 {
@@ -2172,7 +2164,7 @@ main .productGrid-wrap.gradientLayout.noProducts2 {
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: 700;
-  color: #0b2540;
+  color: red;
   position: relative;
   display: inline-block;
 }
@@ -2208,25 +2200,25 @@ main .productGrid-wrap.gradientLayout.noProducts2 {
   }
 }
 .aboutSection .aboutContent p {
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 28px;
 }
 @media (min-width: 768px) {
-  .aboutSection .aboutContent p {
-    font-size: 16px;
-    line-height: 28px;
-  }
-}
-@media (min-width: 992px) {
   .aboutSection .aboutContent p {
     font-size: 18px;
     line-height: 30px;
   }
 }
+@media (min-width: 992px) {
+  .aboutSection .aboutContent p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
 .aboutSection .aboutContent .viewMore {
   padding: 15px;
-  border: 1px solid #f09620;
-  background-color: #f09620;
+  border: 1px solid #0b2540;
+  background-color: #0b2540;
   color: #fff;
   min-width: 160px;
   border-radius: 5px;
@@ -2234,11 +2226,6 @@ main .productGrid-wrap.gradientLayout.noProducts2 {
   text-align: center;
   margin-top: 1em;
   font-size: 16px;
-}
-.aboutSection .aboutContent .viewMore:hover,
-.aboutSection .aboutContent .viewMore:focus {
-  background-color: #687f37;
-  border: 1px solid #687f37;
 }
 .testimonialSection {
   width: 100%;
@@ -2289,7 +2276,7 @@ main .productGrid-wrap.gradientLayout.noProducts2 {
   padding-left: 15px;
 }
 .testimonialSection .testimonials .team .teamContent h4 {
-  color: #f09620;
+  color: #ea6954;
   font-size: 18px;
   margin: 0;
   font-weight: 700;
@@ -2781,7 +2768,7 @@ main .productGrid-wrap.gradientLayout.noProducts2 {
 }
 .newsltr-wrap .newLetter-ctnt .form-group .newsltr-btn {
   min-width: 120px;
-  background-color: #f09620;
+  background-color: #0b2540;
   border-radius: 30px;
   position: absolute;
   top: 0;
@@ -2790,7 +2777,7 @@ main .productGrid-wrap.gradientLayout.noProducts2 {
 }
 .newsltr-wrap .newLetter-ctnt .form-group .newsltr-btn:hover,
 .newsltr-wrap .newLetter-ctnt .form-group .newsltr-btn:focus {
-  background-color: #687f37;
+  background-color: #000000;
 }
 @media (min-width: 992px) {
   .newsltr-wrap .newLetter-ctnt .form-group .newsltr-btn {
@@ -3395,7 +3382,7 @@ a.ui-button:focus {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
-  background-color: #f09620;
+  background-color: #ea6954;
   outline: none;
   display: flex;
   align-items: center;
@@ -3404,7 +3391,7 @@ a.ui-button:focus {
 }
 .pro-card-item button.pro-addcart:hover,
 .pro-card-item button.pro-addcartfocus {
-  background-color: #f09824;
+  background-color: #f3664f;
 }
 @media (min-width: 420px) {
   .pro-card-item button.pro-addcart {
@@ -3595,12 +3582,6 @@ a.ui-button:focus {
 }
 #layout-myaccountIndex .pro-card-item .pro-wish {
   top: 0;
-}
-#categoryList-crsl .pro-card-item a {
-  display: inline-block !important;
-}
-#categoryList-crsl .pro-card-item a .proimg-wrap .pro-img {
-  max-width: 100px !important;
 }
 .column-left .ui-widget-header {
   background-color: #00c9ff;
@@ -6298,7 +6279,11 @@ footer .footerTop {
   width: 100%;
   float: left;
   padding: 50px 0 20px;
-  background: #f09620;
+  background: #ea6954;
+  background: -moz-linear-gradient(45deg, #ea6954 0%, #e1462d 100%);
+  background: -webkit-linear-gradient(45deg, #ea6954 0%, #e1462d 100%);
+  background: linear-gradient(45deg, #ea6954 0%, #e1462d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ea6954', endColorstr='#e1462d', GradientType=1);
   position: relative;
 }
 footer .footerTop:before {
@@ -6405,7 +6390,7 @@ footer .footerTop .email:before {
 footer .footerMiddle {
   width: 100%;
   float: left;
-  background: linear-gradient(rgba(104, 127, 55, 0.9), rgba(104, 127, 55, 0.9)), url(../images/footer-bg-1.jpg);
+  background-image: url(../images/footer-bg.jpg);
   background-position: center;
   background-size: cover;
   padding: 20px 0 30px;
@@ -6446,7 +6431,7 @@ footer .footerMiddle .footerLinks ul li {
   position: relative;
 }
 footer .footerMiddle .footerLinks ul li a {
-  color: #dde5eb;
+  color: #95abbb;
   font-size: 16px;
 }
 footer .footerMiddle .footerLinks ul li:hover a,
@@ -6466,7 +6451,7 @@ footer .footerMiddle .footerLinks ul.usefulLinks li:before {
   width: 0;
   height: 5px;
   border-radius: 10px;
-  background-color: #f09620;
+  background-color: #ea6954;
   transition-duration: 0.3s;
 }
 footer .footerMiddle .footerLinks ul.usefulLinks li:hover,
@@ -6506,7 +6491,7 @@ footer .footerMiddle .footerLinks ul.socialMedia li.pinterest:before {
 footer .footerBottom {
   width: 100%;
   float: left;
-  background-color: #687f37;
+  background-color: #0b2540;
   padding: 20px 0;
   position: relative;
 }
@@ -6521,7 +6506,7 @@ footer .footerBottom {
     top: -15px;
     width: 410px;
     height: 200px;
-    background-color: #f09620;
+    background-color: #ea6954;
     -webkit-transform: skew(40deg);
     -ms-transform: skew(40deg);
     transform: skew(40deg);

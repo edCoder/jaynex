@@ -23,13 +23,13 @@ main{
 			padding: 10px 25px;
 			text-transform: uppercase;
 			color: #ffffff;
-			background-color: #0b2540;
+			background-color: @orange;
 			transition-duration: .3s;
 			border-radius: 5px;
 			min-width: 200px;
 
 			&:hover, &:focus {
-				background-color: #010b10;
+				background-color: @dark-green;
 			}
 
 			i {
@@ -79,12 +79,12 @@ main{
 				left: 50%;
 				transform: translate(-50%, 0);
 				text-transform: capitalize;
-				font-size: 14px;
+				font-size: 13px;
 				color: #0b2540;
 
 				@media @tablet {
 					bottom: 40px;
-					padding: 6px 15px;
+					padding: 4px 10px;
 					line-height: 1.5;
 				}
 			}
@@ -549,6 +549,7 @@ main{
 	align-items: center;
 	// flex-wrap: wrap;
 	flex-direction: column;
+	overflow: hidden;
 
 	@media @laptop {
 		flex-direction: row;
@@ -557,7 +558,10 @@ main{
 	.aboutBanner {
 		width: 100%;
 		display: flex;
-
+		max-height: 400px;
+		@media @laptop {
+			width: 30%;
+		}
 		img {
 			width: 100%;
 			object-fit: cover;
@@ -569,9 +573,11 @@ main{
 
 		@media @tablet {
 			padding: 30px;
+
 		}
 		@media @laptop {
 			padding: 50px;
+			width: 70%;
 		}
 
 		h2 {
@@ -609,22 +615,22 @@ main{
 			}
 		}
 		p {
-			font-size: 16px;
-			line-height: 28px;
+			font-size: 14px;
+			line-height: 26px;
 
 			@media @tablet {
-				font-size: 18px;
-				line-height: 30px;
+				font-size: 16px;
+				line-height: 28px;
 			}
 			@media @laptop {
-				font-size: 20px;
-				line-height: 32px;
+				font-size: 18px;
+				line-height: 30px;
 			}
 		}
 		.viewMore {
 			padding: 15px;
-			border: 1px solid #0b2540;
-			background-color: #0b2540;
+			border: 1px solid @orange;
+			background-color: @orange;
 			color: #fff;
 			min-width: 160px;
 			border-radius: 5px;
@@ -632,6 +638,10 @@ main{
 			text-align: center;
 			margin-top: 1em;
 			font-size: 16px;
+			&:hover, &:focus {
+				background-color: @dark-green;
+				border: 1px solid @dark-green;
+			}
 		}
 	}
 }
@@ -683,7 +693,7 @@ main{
 				padding-left: 15px;
 
 				h4 {
-					color: #ea6954;
+					color: @orange;
 					font-size: 18px;
 					margin: 0;
 					font-weight: 700;

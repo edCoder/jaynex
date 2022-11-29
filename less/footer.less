@@ -13,11 +13,12 @@ footer {
 		width: 100%;
 		float: left;
 		padding: 50px 0 20px;
-		background: #ea6954;
-		background: -moz-linear-gradient(45deg,  #ea6954 0%, #e1462d 100%);
-		background: -webkit-linear-gradient(45deg,  #ea6954 0%,#e1462d 100%);
-		background: linear-gradient(45deg,  #ea6954 0%,#e1462d 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea6954', endColorstr='#e1462d',GradientType=1 );
+		// background: #ea6954;
+		// background: -moz-linear-gradient(45deg,  #ea6954 0%, #e1462d 100%);
+		// background: -webkit-linear-gradient(45deg,  #ea6954 0%,#e1462d 100%);
+		// background: linear-gradient(45deg,  #ea6954 0%,#e1462d 100%);
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea6954', endColorstr='#e1462d',GradientType=1 );
+		background: @orange;
 		position: relative;
 
 		&:before {
@@ -157,7 +158,8 @@ footer {
 	.footerMiddle {
 		width: 100%;
 		float: left;
-		background-image: url(../images/footer-bg.jpg);
+		// background-image: url(../images/footer-bg.jpg);
+		background: linear-gradient(rgba(104, 127, 55, 0.9),rgba(104, 127, 55, 0.9)),url(../images/footer-bg-1.jpg);
 		background-position: center;
 		background-size: cover;
 		padding: 20px 0 30px;
@@ -196,7 +198,7 @@ footer {
 					position: relative;
 
 					a {
-						color: #95abbb;
+						color: #dde5eb;
 						font-size: 16px;
 					}
 					&:hover, &:focus {
@@ -220,7 +222,7 @@ footer {
 							width: 0;
 							height: 5px;
 							border-radius: 10px;
-							background-color: #ea6954;
+							background-color: @orange;
 							transition-duration: .3s;
 						}
 
@@ -279,7 +281,8 @@ footer {
 	.footerBottom {
 		width: 100%;
 		float: left;
-		background-color: #0b2540;
+		background-color: @dark-green;
+
 		padding: 20px 0;
 		position: relative;
 
@@ -293,7 +296,7 @@ footer {
 				top: -15px;
 				width: 410px;
 				height: 200px;
-				background-color: #ea6954;
+				background-color: @orange;
 				-webkit-transform: skew(40deg);
 				-ms-transform: skew(40deg);
 				transform: skew(40deg);
